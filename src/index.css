@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  outline: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b1b2b4;
+  border: 5px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+}
+
+.c-border-dashed {
+  background-image: repeating-linear-gradient(-21deg, #b0b0b0, #b0b0b0 17px, transparent 17px, transparent 33px, #b0b0b0 33px), repeating-linear-gradient(69deg, #b0b0b0, #b0b0b0 17px, transparent 17px, transparent 33px, #b0b0b0 33px), repeating-linear-gradient(159deg, #b0b0b0, #b0b0b0 17px, transparent 17px, transparent 33px, #b0b0b0 33px), repeating-linear-gradient(249deg, #b0b0b0, #b0b0b0 17px, transparent 17px, transparent 33px, #b0b0b0 33px);
+  background-size: 1px 100%, 100% 1px, 1px 100%, 100% 1px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: -2px;
+}
+
+
+.inset-red {
+  box-shadow: inset 0 0 0 1.2px #E30613;
+}
+
+.inset-dark {
+  box-shadow: inset 0 0 0 2px #2c2c2c;
+}
+
+/* .pointer-dragging {
+  transform: none !important;
+} */
